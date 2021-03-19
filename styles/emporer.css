@@ -1,0 +1,1023 @@
+/*DEFAULT*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+body,
+html {
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+}
+.body {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+::selection {
+  color: #f2f2f2;
+  background: rgb(12, 12, 12);
+}
+
+.text_links_style {
+  color: rgb(12, 12, 12);
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+::-webkit-scrollbar {
+  width: 0%;
+}
+
+.progressbar {
+  position: fixed;
+  top: 0;
+  right: 0.3%;
+  background: rgba(0, 0, 0, 1);
+  width: 10px;
+  z-index: 1;
+}
+
+#cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 40px;
+  background: #ffffff;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  transform-origin: 80% 80%;
+  transition: transform 0.5s ease-in-out;
+  animation: borderAnim 4s linear infinite;
+  animation-name: none;
+  z-index: 10;
+}
+
+@keyframes borderAnim {
+  0%,
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  25%,
+  75% {
+    border-radius: 64% 36% 72% 28% / 35% 60% 40% 65%;
+  }
+  50% {
+    border-radius: 46% 54% 38% 62% / 66% 38% 62% 34%;
+  }
+}
+
+/*DEFAULT*/
+
+.catJam {
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.preload-main {
+  left: 0%;
+  position: absolute;
+  background: #f7f7f7;
+  width: 100%;
+  height: 100vh;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/*---------------SECTION HEADER---------------------*/
+.preload-main {
+  left: 0%;
+  position: absolute;
+  background: #f7f7f7;
+  width: 100%;
+  height: 100vh;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-wrapper {
+  width: 100%;
+  height: 100vh;
+}
+.hero {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(12, 12, 12);
+  text-align: left;
+}
+
+/*NAVIGATION*/
+.project-nav {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  mix-blend-mode: difference;
+  z-index: 11;
+  color: #f7f7f7;
+}
+
+.projekt_listing_wrapper {
+  flex-wrap: wrap;
+  margin-top: 3%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 40%;
+}
+
+.projekt_listing {
+  color: #f7f7f7;
+  text-decoration: none;
+  font-family: "Krona One";
+  font-size: 0.7rem;
+}
+
+.projekt_listing_wrapper_mobile {
+  flex-wrap: wrap;
+  margin-top: 3%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 40%;
+  display: none;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+.nav-back-subline-left {
+  font-family: krona one, serif;
+  font-size: 0.7rem;
+  text-align: left;
+  padding-left: 10%;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.nav-back-subline-right {
+  font-family: krona one, serif;
+  font-size: 0.7rem;
+  text-align: right;
+  padding-right: 10%;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.nav-arrow-mobile {
+  display: none;
+}
+
+/*NAVIGATION*/
+
+/*HERO CONTENT*/
+
+.headline {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.hero-h1 {
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-family: krona One, serif;
+  z-index: 10;
+  margin-left: 5%;
+}
+
+.hero-h2 {
+  position: absolute;
+  text-decoration: none;
+  color: rgb(18, 18, 18);
+  font-size: 40rem;
+  text-transform: uppercase;
+  font-family: Krona One;
+  margin-left: 5%;
+}
+
+.video-bg {
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  mix-blend-mode: difference;
+  object-fit: fill;
+  opacity: 0.5;
+}
+
+.tag {
+  position: fixed;
+  color: white;
+  font-family: krona one, serif;
+  font-size: 0.7rem;
+  padding-left: 5%;
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+  z-index: 11;
+  text-decoration: none;
+}
+
+.social-media {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 100vh;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  mix-blend-mode: difference;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.social-media a {
+  color: rgb(255, 255, 255);
+  margin: 10px;
+  mix-blend-mode: difference;
+  overflow: hidden;
+}
+
+/*HERO CONTENT*/
+
+/*PROJECT INTRO*/
+.project-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  padding-top: 8%;
+}
+
+.marquee-about {
+  width: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+.marquee-about span {
+  font-size: 16em;
+  text-transform: uppercase;
+  display: inline-block;
+  animation: marquee-animation 150s linear infinite;
+  font-family: "Krona One";
+  -webkit-text-stroke: 5px rgb(15, 15, 15);
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/*PROJECT INTRO*/
+
+/*PROJECT STORYTELLING*/
+
+.project-storytelling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 150vh;
+  font-family: "Krona One";
+}
+
+.storytelling-zeichen {
+  display: flex;
+  justify-self: center;
+  align-self: flex-start;
+  padding-top: 5%;
+  font-size: 10rem;
+  text-align: left;
+  transform: rotate(180deg);
+  font-family: "Krona One";
+}
+
+.storytelling-text-wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  width: 60%;
+  height: 50%;
+}
+
+.storytelling-headline {
+  margin-bottom: 5%;
+  font-family: "Krona One";
+  text-align: left;
+  font-size: 7rem;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.storytelling-headline:hover {
+  text-decoration: underline;
+}
+
+.storytelling-text {
+  text-align: left;
+  line-height: 3.5rem;
+  font-size: 1.5rem;
+  z-index: 1;
+  font-family: "Krona One";
+  font-weight: 400;
+}
+
+/*PROJECT STORYTELLING*/
+
+.project-intro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.video-intro {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+.project-galerie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+}
+
+.image-stat {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+
+.long-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+
+.long-img-new {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: -1%;
+}
+
+.long-img-mobile {
+  display: none;
+}
+
+.project-galerie-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background: #f7f7f7;
+  margin-bottom: 15%;
+  margin-top: 15%;
+
+}
+
+.image-stat-small {
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+  margin: 1%;
+}
+/*PROJECT CONTENT*/
+
+/*---------------- FOOTER SECTION -------------------*/
+
+.section-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(12, 12, 12);
+  font-family: "Krona One";
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: -3;
+}
+
+.container-copyright {
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
+  margin-bottom: 20%;
+  background-color: #f7f7f7;
+}
+
+.footer-copyright {
+  position: absolute;
+  text-align: center;
+  color: rgb(12, 12, 12);
+  font-size: 4rem;
+  overflow: hidden;
+}
+
+.footer-wrapper-links {
+  position: relative;
+  width: 100%;
+  min-height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 10%;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.back-top-footer {
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 3rem;
+  overflow: hidden;
+  z-index: 10;
+  width: 40%;
+  text-align: center;
+}
+
+.back-top-footer:hover {
+  text-decoration: underline;
+}
+
+.footer-hit-up {
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 3rem;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 10;
+  width: 40%;
+  text-align: center;
+}
+.footer-hit-up:hover {
+  text-decoration: underline;
+}
+.impressum_footer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  margin-top: 10%;
+}
+
+.impressum-datenschutz {
+  position: absolute;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #222222;
+  align-self: flex-end;
+}
+
+.impressum-datenschutz:hover {
+  text-decoration: underline;
+}
+
+/*---------------- FOOTER SECTION -------------------*/
+
+/*---------------- MEDIA QUERIES -------------------*/
+
+@media only screen and (max-width: 1350px) {
+  .projekt_listing_wrapper_mobile {
+    flex-wrap: wrap;
+    margin-top: 3%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 40%;
+    display: flex;
+  }
+  .projekt_listing_wrapper {
+    display: none;
+  }
+
+  /*---------------- HERO SECTION -------------------*/
+  .hero-h1 {
+    font-size: 6rem;
+  }
+
+  .hero-h2 {
+    font-size: 30rem;
+  }
+  /*---------------- HERO SECTION -------------------*/
+
+  .storytelling-headline {
+    font-size: 7rem;
+  }
+
+  .storytelling-zeichen {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .cursor {
+    display: none;
+  }
+  /*---------------- HERO SECTION -------------------*/
+
+  .hero-h1 {
+    font-size: 4rem;
+  }
+
+  .hero-h2 {
+    font-size: 20rem;
+  }
+
+  .nav-left {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    width: 50%;
+    padding-left: 5%;
+  }
+
+  .nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-top: 3%;
+    width: 50%;
+    padding-right: 5%;
+    font-family: "Krona One";
+  }
+
+  .nav-back-subline-left {
+    font-family: "Krona One";
+    font-size: 0.7rem;
+    text-align: left;
+    padding-left: 25%;
+  }
+
+  .nav-back-subline-right {
+    font-family: "Krona One";
+    font-size: 0.7rem;
+    text-align: right;
+    padding-right: 25%;
+  }
+  /*---------------- HERO SECTION -------------------*/
+
+  .project-storytelling {
+    height: 120vh;
+  }
+  .storytelling-headline {
+    font-size: 4rem;
+  }
+
+  /*---------------- FOOTER SECTION -------------------*/
+
+  .footer-copyright {
+    position: absolute;
+    text-align: center;
+    color: rgb(12, 12, 12);
+    font-size: 3rem;
+    overflow: hidden;
+  }
+
+  .back-top-footer {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 1rem;
+    margin-top: 35%;
+    /* margin-left: 5%; */
+    overflow: hidden;
+  }
+
+  .back-top-footer:hover {
+    text-decoration: underline;
+  }
+
+  .footer-hit-up {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 1rem;
+    margin-top: 35%;
+    /* margin-right: 5%; */
+  }
+
+  .impressum-datenschutz {
+    font-size: 0.7rem;
+    margin-top: 65%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #cursor {
+    display: none;
+  }
+  /*---------------- HERO SECTION -------------------*/
+
+  .catJam {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+  .hero-h1 {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  .hero-h2 {
+    font-size: 10rem;
+    margin-left: 0;
+  }
+
+  .nav-back {
+    display: none;
+  }
+
+  .nav-left,
+  .nav-right {
+    padding-top: 10%;
+  }
+
+  .nav-arrow-mobile {
+    display: inline;
+  }
+
+  .nav-back-subline-left {
+    font-family: "Krona One";
+    font-size: 0.7rem;
+    text-align: left;
+    padding-left: 10%;
+  }
+
+  .nav-back-subline-right {
+    font-family: "Krona One";
+    font-size: 0.7rem;
+    text-align: right;
+    padding-right: 10%;
+  }
+
+  .tag {
+    display: none;
+  }
+
+  .social-media {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: difference;
+  }
+
+  .social-media a {
+    color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+    margin-top: 80%;
+  }
+
+  .marquee-about span {
+    font-size: 8rem;
+  }
+
+  /*---------------- HERO SECTION -------------------*/
+
+  .project-storytelling {
+    height: 150%;
+  }
+
+  .storytelling-zeichen {
+    font-size: 5rem;
+  }
+  .storytelling-headline {
+    text-align: left;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 1;
+    text-align: left;
+  }
+
+  .storytelling-text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: left;
+  }
+
+  .storytelling-text-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    width: 70%;
+    height: 50%;
+    padding-left: 5%;
+  }
+
+  .video-intro {
+    object-fit: cover;
+    width: 70vh;
+    height: 100%;
+  }
+
+  .long-img {
+    display: none;
+  }
+
+  .long-img-new {
+    margin-bottom: -1.1%;
+  }
+
+  .long-img-mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+    z-index: -1;
+  }
+
+  /*---------------- FOOTER SECTION -------------------*/
+
+  .impressum-datenschutz {
+    font-size: 0.7rem;
+  }
+
+  .section-footer {
+    height: 100vh;
+  }
+
+  .footer-copyright {
+    position: absolute;
+    text-align: center;
+    color: rgb(12, 12, 12);
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .footer-hit-up {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 1rem;
+    margin-top: 45%;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .back-top-footer {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 1rem;
+    margin-top: 45%;
+    margin-left: 5%;
+    overflow: hidden;
+  }
+
+  .back-top-footer:hover {
+    text-decoration: underline;
+  }
+
+  /* ---------------- FOOTER SECTION ------------------- */
+}
+
+@media only screen and (max-width: 450px) {
+  .hero-h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-h2 {
+    font-size: 8rem;
+  }
+
+  .storytelling-zeichen {
+    font-size: 5rem;
+  }
+  .storytelling-headline {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  .storytelling-text {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    text-align: left;
+  }
+
+  .storytelling-zeichen {
+    font-size: 4rem;
+  }
+
+  .storytelling_text_headline {
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: left;
+  }
+
+  .storytelling_text_fill {
+    margin-top: 5%;
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+    text-align: left;
+  }
+
+  .impressum-datenschutz {
+    font-size: 0.7rem;
+  }
+
+  .section-footer {
+    height: 100vh;
+  }
+
+  .footer-copyright {
+    position: absolute;
+    text-align: center;
+    color: rgb(12, 12, 12);
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .footer-hit-up {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 0.7rem;
+    margin-top: 45%;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .back-top-footer {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 0.7rem;
+    margin-top: 45%;
+    margin-left: 5%;
+    overflow: hidden;
+  }
+
+  .back-top-footer:hover {
+    text-decoration: underline;
+  }
+}
