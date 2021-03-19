@@ -1,5 +1,5 @@
-on:
-  workflow_dispatch:
+'on':
+  workflow_dispatch: null
   push:
     branches:
       - main
@@ -13,5 +13,5 @@ jobs:
       with:
         server: wp13645248.server-he.de
         username: ftp13645248-portfolio
-        password: ${{ secrets.FTP_PASSWORD }}
+        password: '${{ secrets.FTP_PASSWORD }}'
         local-dir: ./
