@@ -8,7 +8,7 @@ name: Deploy website on push
 jobs:
   web-deploy:
     - run: sh inject.sh
-    - name: :open_file_folder: Sync files
+    - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: wp13645248.server-he.de
