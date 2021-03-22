@@ -1,0 +1,14 @@
+.footer {
+    padding: 100px 20px;
+    background-color: pink;
+}
+
+.footer__copyright-container {
+    background-color: white;
+    text-align: center;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-around;
+}
