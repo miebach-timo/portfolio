@@ -1181,7 +1181,7 @@ nav a {
     position: absolute;
     object-fit: contain;
     height: 150vh;
-    width: 150%;
+    width: 100%;
     padding-top: 20%;
     z-index: 1;
   }
@@ -1387,6 +1387,7 @@ nav a {
 
   .section-info {
     height: 70vh;
+    overflow-x: hidden;
   }
 
   .info-wrapper {
