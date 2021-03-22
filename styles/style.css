@@ -11,12 +11,10 @@ html {
   margin: 0;
   padding: 0;
   background-color: #f7f7f7;
-  overflow-x: hidden;
 }
 .body {
   position: relative;
   height: 100%;
-  overflow-x: hidden;
 }
 
 ::selection {
@@ -379,6 +377,7 @@ nav a {
   background: #f7f7f7;
   font-size: 0.9rem;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 .img-me {
