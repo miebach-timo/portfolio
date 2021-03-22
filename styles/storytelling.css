@@ -142,7 +142,7 @@ video {
   transition: transform 0.5s ease-in-out;
   animation: borderAnim 4s linear infinite;
   animation-name: none;
-  z-index: 10;
+  z-index: 15;
 }
 
 @keyframes borderAnim {
