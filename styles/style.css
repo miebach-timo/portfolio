@@ -6,8 +6,8 @@
   cursor: none;
 }
 
-body,
-html {
+body
+ {
   margin: 0;
   padding: 0;
   background-color: #f7f7f7;
@@ -15,6 +15,7 @@ html {
 .body {
   position: relative;
   height: 100%;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -114,9 +115,7 @@ video {
   vertical-align: baseline;
 }
 
-::-webkit-scrollbar {
-  width: 0%;
-}
+
 
 .progressbar {
   position: fixed;
@@ -427,6 +426,7 @@ nav a {
   z-index: 10;
   width: 100%;
   height: 100vh;
+  justify-content: space-between;
 }
 
 .info-wrapper {
@@ -440,11 +440,12 @@ nav a {
 }
 
 .smiley-gif {
-  transform: translate(20%, 60%);
   position: absolute;
-  right: 0;
+  display: flex;
+  align-self:flex-end;
   width: 50%;
   height: 50%;
+  padding-left: 25%;
   object-fit: contain;
 }
 
@@ -468,7 +469,6 @@ nav a {
 
 .paragraph a {
   color: rgb(12, 12, 12);
-  font-weight: 500;
 }
 
 .info-headline:hover {
@@ -796,11 +796,9 @@ nav a {
   /*---------------- Info SECTION -------------------*/
 
   .smiley-gif {
-    transform: translate(10%, 60%);
     position: absolute;
-    right: 0;
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
     object-fit: contain;
   }
 
@@ -1387,7 +1385,6 @@ nav a {
 
   .section-info {
     height: 70vh;
-    overflow-x: hidden;
   }
 
   .info-wrapper {
@@ -1404,6 +1401,7 @@ nav a {
     z-index: 10;
     width: 60%;
     padding-top: 5%;
+
   }
 
   .paragraph a {
