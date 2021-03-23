@@ -130,7 +130,7 @@ TweenMax.from(".paragraph", 1.7, {
   },
   opacity: 0,
   skewY: 1,
-  x: 200,
+  y: 50,
   ease: "Expo.easeInOut",
 
 })
@@ -146,7 +146,7 @@ TweenMax.from(".info-headline", 3, {
 
   skewY: 1,
   opacity: 0,
-  x: -200,
+  y: -100,
   ease: "Expo.easeInOut",
 
 })
@@ -158,7 +158,7 @@ TweenMax.from(".info-read-more", 1.7, {
     start: "top bottom",
     end: "top 70%",
     trigger: ".info-read-more",
-    scrub: 4,
+    scrub: 3,
   },
 
   skewY: 5,

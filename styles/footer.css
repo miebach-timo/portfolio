@@ -1,14 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Krona One";
+}
+
 .footer {
-    padding: 100px 20px;
-    background-color: pink;
+  padding: 100px 20px;
+  background-color: rgb(26, 26, 26);
+  height: 100vh;
 }
 
 .footer__copyright-container {
-    background-color: white;
-    text-align: center;
+  display: flex;
+  background-color: white;
+  text-align: center;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copyright-text {
+  font-size: 4rem;
+  text-transform: uppercase;
 }
 
 .footer__links {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
