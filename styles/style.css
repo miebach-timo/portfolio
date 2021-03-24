@@ -6,8 +6,7 @@
   cursor: none;
 }
 
-body
- {
+body {
   margin: 0;
   padding: 0;
   background-color: #f7f7f7;
@@ -114,7 +113,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 
 ::-webkit-scrollbar {
   width: 0%;
@@ -445,7 +443,7 @@ nav a {
 .smiley-gif {
   position: absolute;
   display: flex;
-  align-self:flex-end;
+  align-self: flex-end;
   width: 50%;
   height: 50%;
   padding-left: 25%;
@@ -751,6 +749,7 @@ nav a {
   font-size: 1rem;
   color: #222222;
   align-self: flex-end;
+  padding-top: 10%;
 }
 
 .impressum-datenschutz:hover {
@@ -758,7 +757,6 @@ nav a {
 }
 
 /*---------------- FOOTER SECTION -------------------*/
-
 
 /*---------------- MEDIA QUERIES -------------------*/
 
@@ -1046,7 +1044,6 @@ nav a {
 
   /*---------------- JOKES SECTION -------------------*/
   /*---------------- FOOTER SECTION -------------------*/
-
 
   .impressum-datenschutz {
     font-size: 0.7rem;
@@ -1403,7 +1400,6 @@ nav a {
     z-index: 10;
     width: 60%;
     padding-top: 5%;
-
   }
 
   .paragraph a {

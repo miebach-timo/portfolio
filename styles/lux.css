@@ -503,16 +503,11 @@ video {
   padding: 0;
 }
 
-.long-img {
+.long-img-new {
   height: 100%;
   width: 100%;
   object-fit: contain;
-  margin: 0;
-  padding: 0;
-}
-
-.long-img-mobile {
-  display: none;
+  margin-bottom: -1.1%;
 }
 
 .project-galerie-small {
@@ -830,8 +825,6 @@ video {
   }
 
   /*---------------- HERO SECTION -------------------*/
-
-
 
   .storytelling-zeichen {
     font-size: 5rem;
