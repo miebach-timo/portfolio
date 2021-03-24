@@ -1120,9 +1120,7 @@ video {
     font-size: 0.7rem;
     line-height: 1.2rem;
   }
-  .impressum_footer {
-    margin-top: 35%;
-  }
+
   .impressum-datenschutz {
     font-size: 0.7rem;
   }
@@ -1173,12 +1171,19 @@ video {
   /*---------------- Impressum Datenschutz SECTION -------------------*/
 
   .about_cv_headline {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
   .about_cv_info_text {
-    font-size: 1.2rem;
-    line-height: 2.4rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
   }
+
+  .cv_headline_border_tag
+
+  {
+    font-size: 0.8rem;
+  }
+
   .impressum_datenschutz_wrapper {
     display: flex;
     width: 100%;

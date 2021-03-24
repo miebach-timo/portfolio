@@ -420,8 +420,8 @@ video {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 150vh;
   font-family: "Krona One";
+  margin-bottom: 15%;
 }
 
 .storytelling-zeichen {
@@ -509,13 +509,6 @@ video {
   object-fit: contain;
   margin: 0;
   padding: 0;
-}
-
-.long-img-new {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  margin-bottom: -1%;
 }
 
 .long-img-mobile {
@@ -725,9 +718,6 @@ video {
   }
   /*---------------- HERO SECTION -------------------*/
 
-  .project-storytelling {
-    height: 120vh;
-  }
   .storytelling-headline {
     font-size: 4rem;
   }
@@ -840,9 +830,7 @@ video {
 
   /*---------------- HERO SECTION -------------------*/
 
-  .project-storytelling {
-    height: 150%;
-  }
+
 
   .storytelling-zeichen {
     font-size: 5rem;
@@ -882,15 +870,11 @@ video {
     display: none;
   }
 
-  .long-img-new {
-    margin-bottom: -1.1%;
-  }
-
   .long-img-mobile {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: contain;
     z-index: -1;
   }
