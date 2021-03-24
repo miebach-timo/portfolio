@@ -700,6 +700,7 @@ video {
   font-size: 1rem;
   color: #222222;
   align-self: flex-end;
+  padding-top: 10%;
 }
 
 .impressum-datenschutz:hover {
@@ -1178,9 +1179,7 @@ video {
     line-height: 1.4rem;
   }
 
-  .cv_headline_border_tag
-
-  {
+  .cv_headline_border_tag {
     font-size: 0.8rem;
   }
 
