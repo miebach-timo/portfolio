@@ -409,7 +409,6 @@ video {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 120vh;
   font-family: "Krona One";
 }
 
@@ -458,10 +457,8 @@ video {
 
 .project-intro {
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .project_intro_editorial {
@@ -668,6 +665,8 @@ video {
   font-size: 1rem;
   color: #222222;
   align-self: flex-end;
+  padding-top: 10%;
+
 }
 
 .impressum-datenschutz:hover {
@@ -918,10 +917,6 @@ video {
     height: 50%;
   }
 
-  .project-storytelling {
-    height: 100vh;
-  }
-
   .storytelling_text_headline {
     font-size: 2rem;
     text-align: left;
@@ -1011,9 +1006,6 @@ video {
       text-align: center;
       align-self: center;
       justify-self: center;
-    }
-    .project-intro {
-      height: 70vh;
     }
 
     .video-intro {
