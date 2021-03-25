@@ -425,17 +425,6 @@ video {
 
 /*---------------- Impressum Datenschutz-------------------*/
 
-.impressum_datenschutz_wrapper {
-  display: flex;
-  width: 100%;
-  height: 140vh;
-  background-color: #f7f7f7;
-  align-items: center;
-  color: rgb(12, 12, 12);
-  font-family: "Krona One";
-  flex-direction: column;
-}
-
 .impressum_fließtext_info {
   font-size: 1rem;
   z-index: 3;
@@ -589,6 +578,7 @@ video {
   color: #f7f7f7;
   border-bottom: 3px solid rgb(255, 255, 255);
   width: 70%;
+  height: 10%;
   margin-left: 15%;
 }
 
@@ -684,12 +674,13 @@ video {
 .footer-hit-up:hover {
   text-decoration: underline;
 }
+
 .impressum_footer {
   display: flex;
   justify-content: center;
   align-items: baseline;
   width: 100%;
-  height: 30vh;
+  height: 40%;
   position: absolute;
   margin-top: 10%;
 }
@@ -817,16 +808,6 @@ video {
     font-size: 1.2rem;
     line-height: 2.4rem;
   }
-  .impressum_datenschutz_wrapper {
-    display: flex;
-    width: 100%;
-    height: 140vh;
-    background-color: #f7f7f7;
-    align-items: center;
-    color: rgb(12, 12, 12);
-    font-family: "Krona One";
-    flex-direction: column;
-  }
 
   .impressum_fließtext_info {
     font-size: 0.7rem;
@@ -881,9 +862,7 @@ video {
 
   /*---------------- FOOTER SECTION -------------------*/
 
-  .impressum_footer {
-    margin-top: 35%;
-  }
+
   .impressum-datenschutz {
     font-size: 0.7rem;
   }
@@ -993,17 +972,6 @@ video {
   .about_cv_info_text {
     font-size: 1.2rem;
     line-height: 2.4rem;
-  }
-  .impressum_datenschutz_wrapper {
-    display: flex;
-    width: 100%;
-    height: 150vh;
-    background-color: #f7f7f7;
-    align-items: center;
-    color: rgb(12, 12, 12);
-    font-family: "Krona One";
-    flex-direction: column;
-    margin-bottom: 35%;
   }
 
   .datenschutzerlkärung_wrapper {
@@ -1181,18 +1149,6 @@ video {
 
   .cv_headline_border_tag {
     font-size: 0.8rem;
-  }
-
-  .impressum_datenschutz_wrapper {
-    display: flex;
-    width: 100%;
-    height: 150vh;
-    background-color: #f7f7f7;
-    align-items: center;
-    color: rgb(12, 12, 12);
-    font-family: "Krona One";
-    flex-direction: column;
-    margin-bottom: 35%;
   }
 
   .datenschutzerlkärung_wrapper {
